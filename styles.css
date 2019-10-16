@@ -4,16 +4,33 @@
     text-align: left;
     padding-left: 2%;
     padding-top: 1%;
+    
 }
+.logo a{
+    text-decoration: none;
+    color: #3C737D;
+}
+hr{ 
+    height: 1px;
+    width: 1280px;
+    color: #3C737D;
+    background-color: #3C737D;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+  }
 
 nav{
+  border-bottom: 2px solid #3C737D; 
   position: relative;
-  width: 100vw
+  width: 90vw;
   margin: 0 auto;
   padding: 10px 0;
   z-index: 1;
   text-align: right;
   padding-right: 5%;
+
   
 }
 .navList li{
@@ -81,16 +98,6 @@ nav{
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
   
   
   
@@ -123,3 +130,49 @@ nav{
     from {opacity: .4}
     to {opacity: 1}
   }
+
+.lowerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lowerCard{
+    
+    width: 600px;
+    height: 500px;
+    padding:40px;
+}
+
+.lowerCard h1{
+    color: #3C737D; 
+    text-align: center;
+    display: block;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.lowerCard p{
+    font-size: 18px;
+    padding: 0;
+    
+}
+.buttonhold{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.button {
+    background-color: white;
+    border: 2px solid #3C737D;
+    color: #3C737D;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    font-size: 16px;
+    
+    
+  }
+
+  

@@ -1,3 +1,8 @@
+.container{
+  height: 100%;
+  position: relative;
+}
+
 .logo{
     float: left;
     font-size: 25px;
@@ -10,9 +15,21 @@
     text-decoration: none;
     color: #3C737D;
 }
+.mobileLogo{
+  float: left;
+  font-size: 30px;
+  text-align: left;
+  padding: 2%;
+  display: none;
+  
+}
+.mobileLogo a{
+  text-decoration: none;
+  color: #3C737D;
+}
 hr{ 
     height: 1px;
-    width: 1280px;
+    width: 90%;
     color: #3C737D;
     background-color: #3C737D;
     border: none;
@@ -32,6 +49,7 @@ nav{
 
   
 }
+
 .navList li{
     display: inline-block;
   }
@@ -48,29 +66,32 @@ nav{
     z-index: 1;
     
 }
+
   
   body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
   }
 
  
 
-  /* Slideshow container */
+  
   .slideshow-container {
-    width: 95vw;
+    width: 100%;
     margin: auto;
     position: relative;
     
     
   }
   
-  /* Hide the images by default */
+  
   .mySlides {
     display: none;
   }
   
-  /* Next & previous buttons */
+  
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -86,13 +107,13 @@ nav{
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
@@ -100,23 +121,11 @@ nav{
   
   
   
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
   
-  .active, .dot:hover {
-    background-color: #717171;
-  }
   
-  /* Fading animation */
+  
+  
+  
   .fade {
     animation-name: fade;
     animation-duration: 2.5s;
@@ -134,12 +143,15 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 .lowerCard{
     
-    width: 600px;
-    height: 500px;
-    padding:40px;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
 }
 
 .lowerCard h1{
@@ -153,13 +165,14 @@ nav{
 }
 .lowerCard p{
     font-size: 18px;
-    padding: 0;
+    display: block;
     
 }
 .buttonhold{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: block;
 }
 .button {
     background-color: white;
@@ -172,6 +185,12 @@ nav{
     font-size: 16px;
     
     
+    
+  }
+  .button:hover{
+    background-color: #3C737D;
+    color: white;
+    transition: .5s;
   }
   .aboutContainer{
     margin-top: 50px;
@@ -230,4 +249,172 @@ nav{
   padding: 0;
   
   
+}
+.blogContainer1{
+  margin-top: 50px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.blogContainer1 h1{
+  color: #3C737D; 
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.blogContainer1 p{
+  font-size: 18px;
+  padding: 0;
+
+}
+.blogImageRight img{
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+  float: right;
+
+}
+.blogImageLeft img{
+  margin-right: 20px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+  float: left;
+
+}
+.blogContainer1 a{
+  color: #3C737D; 
+  text-align: left;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.storeContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1{
+  color: #3C737D; 
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 50px;;
+}
+
+.storeCard{
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+.storeCard a{
+  color: #3C737D; 
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+   
+}
+.storeOverlay img{
+  opacity: 1;
+  transition: .5s ease;
+}
+.storeCard:hover img{
+  opacity: .2;
+   
+}
+.storeCard:hover .storeText {
+  opacity: 1;
+}
+.storeOverlay {
+  
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+  transition: .5s ease;
+  
+}
+.storeText {
+  opacity: 0;
+  color: #3C737D;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: left;
+  padding: 10px;
+}
+.storeCard p{
+  color: #3C737D; 
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    
+}
+.shippingDisclaimer p{
+  color: #3C737D; 
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    
+}
+
+
+.socialFooter {
+  display: inline-block;
+  text-align: center;
+margin-bottom: 10px; 
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+.socialFooter img{
+  margin: 10px;;
+}
+
+@media screen and (max-width: 538px) {
+.lowerContainer{
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+}
+.storeContainer{
+  flex-direction: column;
+  
+}
+.storeCard {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  display: none;
+}
+.blogImageRight img{
+  width: 100%;
+  height: 100%;
+
+}
+.blogImageLeft img{
+  width: 100%;
+  height: 100%;
+
+}
+.mobileLogo {
+  display: block;
+  
+}
+
 }

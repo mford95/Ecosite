@@ -24,17 +24,3 @@ function showSlides(n) {
  
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-function toggleDarkLight() {
-  var body = document.getElementById("body");
-  var currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-}
